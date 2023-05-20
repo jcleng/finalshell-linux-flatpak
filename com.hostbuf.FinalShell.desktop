@@ -1,0 +1,7 @@
+[Desktop Entry]
+Categories=Development;
+Exec=run.sh
+Icon=com.hostbuf.FinalShell
+Name=FinalShell
+Terminal=false
+Type=Application
