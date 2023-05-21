@@ -15,6 +15,8 @@ jobs:
       image: bilelmoussaoui/flatpak-github-actions:freedesktop-22.08
       options: --privileged
     steps:
+    - name: Checkout
+      uses: actions/checkout@main
 
     - name: flatpak action
       uses: flatpak/flatpak-github-actions/flatpak-builder@v4
