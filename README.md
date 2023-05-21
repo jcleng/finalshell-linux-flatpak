@@ -1,4 +1,4 @@
-# [FinalShell](http://www.hostbuf.com/)
+# [FinalShell](https://www.hostbuf.com/)
 
 一个免费且好用的ssh工具
 
@@ -8,3 +8,5 @@
 # 实际构命令
 flatpak-builder --user --install --force-clean build-dir --verbose com.hostbuf.FinalShell.json
 ```
+
+![1684639238338.png](https://img1.imgtp.com/2023/05/21/eej6Vuue.png)
