@@ -48,5 +48,4 @@ jobs:
       with:
         tag_name: flatpakfile
         body_path: release.txt
-        files: |
-          ${{ env.RELEASE_PATH }}/release.txt
+        files: ${{ env.RELEASE_PATH }}/*.flatpak
