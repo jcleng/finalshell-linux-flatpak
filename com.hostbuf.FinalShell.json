@@ -40,8 +40,10 @@
             "build-commands": [
                 "ls",
                 "install -Dm777 run.sh /app/bin/run.sh",
-                "mkdir -p /app/fl",
-                "unzip -o FinalShell.zip -d /app/fl",
+                "wget http://dl.hostbuf.com/finalshell2/finalshell_linux.zip",
+                
+                "unzip -o finalshell_linux.zip -d /app/",
+                "mv /app/FinalShell /app/fl",
                 "chmod +x /app/fl/bin/FinalShell",
                 "ls /app/fl",
                 "mkdir -p /app/share/applications/",
