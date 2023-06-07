@@ -18,6 +18,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
+    - name: get App file
+      run: |
+        wget http://dl.hostbuf.com/finalshell2/finalshell_linux.zip?v=$RANDOM
+        
     - name: flatpak action
       uses: flatpak/flatpak-github-actions/flatpak-builder@v4
       with:
