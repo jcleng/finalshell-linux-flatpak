@@ -20,7 +20,7 @@ jobs:
 
     - name: get App file
       run: |
-        wget http://dl.hostbuf.com/finalshell2/finalshell_linux.zip?v=$RANDOM
+        curl http://dl.hostbuf.com/finalshell2/finalshell_linux.zip -O finalshell_linux.zip
         
     - name: flatpak action
       uses: flatpak/flatpak-github-actions/flatpak-builder@v4
