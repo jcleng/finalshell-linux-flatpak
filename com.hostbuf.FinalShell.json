@@ -40,17 +40,20 @@
             "make-args": [
                 "7z"
             ],
+            "make-install-args": [
+                "DEST_HOME=/app"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/jinfeihan57/p7zip/archive/v17.04/p7zip-v17.04.tar.gz",
-                    "sha256": "ea029a2e21d2d6ad0a156f6679bd66836204aa78148a4c5e498fe682e77127ef"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "sed -i 's|/usr/local|/app|g' makefile.common"
-                    ]
+                    "url": "https://github.com/p7zip-project/p7zip/archive/refs/tags/v17.05.tar.gz",
+                    "sha256": "d2788f892571058c08d27095c22154579dfefb807ebe357d145ab2ddddefb1a6",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/p7zip-project/p7zip/releases/latest",
+                        "version-query": ".tag_name",
+                        "url-query": "\"https://github.com/p7zip-project/p7zip/archive/refs/tags/\\($version).tar.gz\""
+                    }
                 }
             ]
         },
