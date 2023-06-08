@@ -43,8 +43,7 @@
                 "install -Dm777 run.sh /app/bin/run.sh",
                 
                 
-                "unzip -o finalshell_linux.zip -d /app/",
-                "mv /app/FinalShell /app/fl",
+                "mv FinalShell /app/fl",
                 "chmod +x /app/fl/bin/FinalShell",
                 "ls /app/fl",
                 "mkdir -p /app/share/applications/",
