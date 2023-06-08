@@ -36,15 +36,28 @@
         },
         {
             "name": "finalshell",
+            "buildsystem": "simple",
+            "build-commands": [
+                "for file in *\\*; do target=\"${file//\\//}\"; mkdir -p \"${target%/*}\"; mv -v \"$file\" \"$target\"; done",
+                "mv FinalShell /app/fl",
+                "chmod +x /app/fl/bin/FinalShell"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "archive-type": "7z",
+                    "url": "http://dl.hostbuf.com/finalshell2/finalshell_linux.zip",
+                    "sha256": "635237637c5b619bcceba91900666b64d56ecb7be63f298f601ec786ce087094"
+                }
+            ]
+        },
+        {
+            "name": "desktop",
             "builddir": true,
             "buildsystem": "simple",
             "build-commands": [
                 "ls",
                 "install -Dm777 run.sh /app/bin/run.sh",
-                
-                
-                "mv FinalShell /app/fl",
-                "chmod +x /app/fl/bin/FinalShell",
                 "ls /app/fl",
                 "mkdir -p /app/share/applications/",
                 "mkdir -p /app/share/icons/hicolor/scalable/apps/",
