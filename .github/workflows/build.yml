@@ -21,6 +21,7 @@ jobs:
     - name: get App file
       run: |
         curl -o finalshell_linux.zip http://dl.hostbuf.com/finalshell2/finalshell_linux.zip
+        apt install p7zip-full
         7z x finalshell_linux.zip
         for file in *\\*; do target="${file//\\//}"; mkdir -p "${target%/*}"; mv -v "$file" "$target"; done
 
