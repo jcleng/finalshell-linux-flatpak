@@ -21,6 +21,7 @@ jobs:
     - name: get App file
       run: |
         curl -o finalshell_linux.zip http://dl.hostbuf.com/finalshell2/finalshell_linux.zip
+        unzip finalshell_linux.zip
         
     - name: flatpak action
       uses: flatpak/flatpak-github-actions/flatpak-builder@v4
