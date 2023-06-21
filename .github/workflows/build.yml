@@ -39,12 +39,12 @@ jobs:
         manifest-path: com.hostbuf.FinalShell.json
         cache-key: flatpak-builder0521
 
-    - name: Cloudupload
-      id: cloudupload
-      run: |
-        curl -fsSL git.io/file-transfer | sh
-        ./transfer wss --no-progress com.hostbuf.FinalShell.flatpak 2>&1 | tee release.txt
-        # echo "url=$(cat cloudupload.log | grep https | cut -f3 -d' ')" >> $GITHUB_OUTPUT
+#     - name: Cloudupload
+#       id: cloudupload
+#       run: |
+#         curl -fsSL git.io/file-transfer | sh
+#         ./transfer wss --no-progress com.hostbuf.FinalShell.flatpak 2>&1 | tee release.txt
+#         # echo "url=$(cat cloudupload.log | grep https | cut -f3 -d' ')" >> $GITHUB_OUTPUT
     # - name: upload cloudupload url
     #   run: |
     #     echo ${{ steps.cloudupload.outputs.url }}
