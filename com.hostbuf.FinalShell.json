@@ -38,9 +38,6 @@
             "name": "finalshell",
             "buildsystem": "simple",
             "build-commands": [
-                "wget http://dl.hostbuf.com/finalshell2/finalshell_linux.zip",
-                "set +e",
-                "unzip finalshell_linux.zip",
                 "mv FinalShell /app/fl",
                 "chmod +x /app/fl/bin/FinalShell"
             ]
