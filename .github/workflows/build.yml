@@ -14,22 +14,23 @@ jobs:
     container:
       image: bilelmoussaoui/flatpak-github-actions:freedesktop-22.08
       options: --privileged
+
     steps:
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y p7zip-full
-        
     - name: Checkout
       uses: actions/checkout@main
 
     - name: get App file
       run: |
         curl -o finalshell_linux.zip http://dl.hostbuf.com/finalshell2/finalshell_linux.zip
-        7z x finalshell_linux.zip
+
+    - uses: edgarrc/action-7z@v1
+      with:
+        args: 7z x finalshell_linux.zip
+    
+    - name: change file path
+      run: |
         chmod +x ./change_file_path.sh
         ./change_file_path.sh
-
         
     - name: flatpak action
       uses: flatpak/flatpak-github-actions/flatpak-builder@v4
