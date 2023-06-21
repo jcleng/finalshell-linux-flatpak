@@ -35,20 +35,14 @@
             ]
         },
         {
-            "name": "finalshell",
-            "buildsystem": "simple",
-            "build-commands": [
-                "mv FinalShell /app/fl",
-                "chmod +x /app/fl/bin/FinalShell"
-            ]
-        },
-        {
             "name": "desktop",
             "builddir": true,
             "buildsystem": "simple",
             "build-commands": [
                 "ls",
                 "install -Dm777 run.sh /app/bin/run.sh",
+                "mv FinalShell /app/fl",
+                "chmod +x /app/fl/bin/FinalShell",
                 "ls /app/fl",
                 "mkdir -p /app/share/applications/",
                 "mkdir -p /app/share/icons/hicolor/scalable/apps/",
