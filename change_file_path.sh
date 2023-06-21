@@ -19,4 +19,16 @@ for file in ./*; do
         mv "$file" $path_t1$real_file_name
         echo "$file 到 $path_t1$real_file_name"
     fi
+
 done
+
+find FinalShell -type f -exec chmod 644 {} \;
+find FinalShell -type d -exec chmod 755 {} \;
+
+chmod -R 755 FinalShell/lib/runtime/lib/classlist
+chmod -R 755 FinalShell/lib/runtime/lib/jexec
+chmod -R 755 FinalShell/lib/runtime/lib/jspawnhelper
+chmod -R 755 FinalShell/lib/runtime/lib/modules
+chmod -R 755 FinalShell/lib/runtime/lib/security/cacerts
+
+chmod 755 FinalShell/bin/FinalShell
