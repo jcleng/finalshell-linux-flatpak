@@ -4,6 +4,8 @@
 
 使用官方的最新文件进行构建
 
+![](https://github.com/jcleng/finalshell-linux-flatpak/workflows/RUN%20BUILD/badge.svg)
+
 4.0 tag/flatpakfile_202306210807
 
 3.9.82 tag/flatpakfile_202305210348
