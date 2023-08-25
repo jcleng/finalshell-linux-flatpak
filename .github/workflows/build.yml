@@ -1,11 +1,8 @@
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: '立即构建'
-        required: true
-        default: 'true'
+  schedule:
+    - cron:  '22 16 15 * *'
 name: RUN BUILD
 jobs:
   flatpak:
