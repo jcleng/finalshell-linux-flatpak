@@ -11,22 +11,25 @@
       FinalShell is an all-in-one server and network management software,
       not only as a ssh client, but also as a powerful development and operation and maintenance tool,
       fully meeting the needs of development and operation and maintenance.
-      </br>
-      FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,还是功能强大的开发,运维工具,充分满足开发,运维需求.
+        <p>
+        FinalShell是一体化的的服务器,网络管理软件,不仅是ssh客户端,还是功能强大的开发,运维工具,充分满足开发,运维需求.
+        </p>
     </p>
     <p>
     Features.
     Cloud synchronization, free remote desktop acceleration for overseas servers,
     ssh acceleration, localized command input box, support for auto-completion,
     command history, custom command parameters.
-    </br>
-    特色功能:
-    云端同步,免费海外服务器远程桌面加速,ssh加速,本地化命令输入框,支持自动补全,命令历史,自定义命令参数
+      <p>
+      特色功能:
+      云端同步,免费海外服务器远程桌面加速,ssh加速,本地化命令输入框,支持自动补全,命令历史,自定义命令参数
+      </p>
     </p>
     <p>
     NOTE: This wrapper is not verified by, affiliated with, or supported by www.hostbuf.com.
-    </br>
-    提示: 本构建未经www.hostbuf.com验证, 或得到www.hostbuf.com的支持。这个一个个人构建版本。
+      <p>
+      提示: 本构建未经www.hostbuf.com验证, 或得到www.hostbuf.com的支持。这个一个个人构建版本。
+      </p>
     </p>
   </description>
   <url type="homepage">https://www.hostbuf.com/t/988.html</url>
