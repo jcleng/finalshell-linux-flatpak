@@ -26,3 +26,7 @@
 GDK_SCALE=2
 GDK_DPI_SCALE=0.5
 ```
+
+- 关于下载
+
+如果是首次使用flatpak,需要`org.freedesktop.Platform`运行时, 安装文件的时候会自动下载并安装, 如果国内下载很慢, 可以[手动下载](https://github.com/jcleng/release_flatpak_file/releases/tag/org.freedesktop.Platform_22.08_202308280722)先安装运行时
