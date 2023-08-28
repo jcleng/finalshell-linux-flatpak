@@ -30,11 +30,11 @@ jobs:
         ./change_file_path.sh
         
     - name: flatpak action
-      uses: flatpak/flatpak-github-actions/flatpak-builder@v4
+      uses: flatpak/flatpak-github-actions/flatpak-builder@v6.1
       with:
         bundle: com.hostbuf.FinalShell.flatpak
         manifest-path: com.hostbuf.FinalShell.json
-        cache-key: flatpak-builder0521
+        repository-name: flathub
 
 #     - name: Cloudupload
 #       id: cloudupload
