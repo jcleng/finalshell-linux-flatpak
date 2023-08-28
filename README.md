@@ -6,6 +6,8 @@
 
 ![](https://github.com/jcleng/finalshell-linux-flatpak/workflows/RUN%20BUILD/badge.svg)
 
+4.2.4 tag/flatpakfile_202308280933
+
 4.0 tag/flatpakfile_202306210807
 
 3.9.82 tag/flatpakfile_202305210348
