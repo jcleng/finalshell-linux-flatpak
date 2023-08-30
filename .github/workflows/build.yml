@@ -35,6 +35,7 @@ jobs:
         bundle: com.hostbuf.FinalShell.flatpak
         manifest-path: com.hostbuf.FinalShell.json
         repository-name: flathub
+        branch: stable
 
 #     - name: Cloudupload
 #       id: cloudupload
